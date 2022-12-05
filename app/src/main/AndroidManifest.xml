@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ebook">
         <activity
-            android:name=".itpdfs"
-            android:exported="false" />
-        <activity
-            android:name=".ecepdfs"
+            android:name=".PdfViewerActivity"
             android:exported="false" />
         <activity
             android:name=".csepdfs"
             android:exported="false" />
         <activity
             android:name=".dept"
+            android:exported="false" />
+        <activity
+            android:name=".ebookActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

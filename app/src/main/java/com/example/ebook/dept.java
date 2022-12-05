@@ -34,14 +34,14 @@ public class dept extends AppCompatActivity {
                     Intent in = new Intent(view.getContext(),csepdfs.class);
                     startActivity(in);
                 }
-                else if(i==1){
-                    Intent in = new Intent(view.getContext(),ecepdfs.class);
-                    startActivity(in);
-                }
-                else{
-                    Intent in = new Intent(view.getContext(),itpdfs.class);
-                    startActivity(in);
-                }
+//                else if(i==1){
+//                    Intent in = new Intent(view.getContext(),ecepdfs.class);
+//                    startActivity(in);
+//                }
+//                else{
+//                    Intent in = new Intent(view.getContext(),itpdfs.class);
+//                    startActivity(in);
+//                }
             }
         });
     }
