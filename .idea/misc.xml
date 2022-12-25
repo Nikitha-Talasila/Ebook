@@ -3,17 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/drawable/gradient.xml" value="0.1165" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_admin.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_csepdfs.xml" value="0.2546875" />
-        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_dept.xml" value="0.25" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_dept.xml" value="0.1" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_ebook.xml" value="0.1" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_ecepdfs.xml" value="0.2546875" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_feedback.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_itpdfs.xml" value="0.2546875" />
-        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_main2.xml" value="0.2546875" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_pdf_viewer.xml" value="0.16" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_pdfs.xml" value="0.1" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_splash.xml" value="0.176" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/activity_years.xml" value="0.11354166666666667" />
-        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/card.xml" value="0.2" />
+        <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/card.xml" value="0.144" />
         <entry key="..\:/Users/nikit/AndroidStudioProjects/Ebook/app/src/main/res/layout/ebook_item_layout.xml" value="0.2" />
       </map>
     </option>

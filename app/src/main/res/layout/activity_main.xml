@@ -4,29 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="99dp">
+
+    <Button
+        android:id="@+id/adminlogB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="23dp"
+        android:backgroundTint="#B9DEFB"
+        android:fontFamily="@font/coustardregular"
+        android:text="Admin"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nextB"
+        app:layout_constraintEnd_toStartOf="@+id/nextB"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/nextB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="121dp"
-        android:backgroundTint="#44E44C"
+        android:layout_marginBottom="177dp"
+        android:backgroundTint="#B9DEFB"
         android:fontFamily="@font/coustardregular"
-        android:text="Next"
+        android:text="user"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adminlogB"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="181dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="296dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="52dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,16 +58,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="166dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="120dp"
+        android:layout_width="203dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="104dp"
         android:fontFamily="@font/coustardregular"
         android:text="V-READ"
+        android:gravity="center"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/nextB"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

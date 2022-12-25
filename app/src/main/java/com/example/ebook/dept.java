@@ -9,14 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class dept extends AppCompatActivity {
     private ListView mListView;
-    private String[] names = {"CSE","ECE","IT","MECH","BT","FT"};
-    private int [] images = {R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img};
+    ImageButton feedbackB;
+    private String[] names = {"CSE","ECE","CIVIL","MECH","FT"};
+    private int [] images = {R.drawable.cse,R.drawable.ece,R.drawable.civil,R.drawable.mech,R.drawable.ft};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,15 @@ public class dept extends AppCompatActivity {
         MyAdapter adapter = new MyAdapter();
         mListView.setAdapter(adapter);
 
+        feedbackB=findViewById(R.id.feedback);
+
+        feedbackB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(view.getContext(),feedbackActivity.class);
+                startActivity(in);
+            }
+        });
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

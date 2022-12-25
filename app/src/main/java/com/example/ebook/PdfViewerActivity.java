@@ -32,7 +32,9 @@ public class PdfViewerActivity extends AppCompatActivity {
             System.out.println("Null Ochindi");
         else{
             System.out.println(url);
-            new PdfDownload().execute(url);}
+            new PdfDownload().execute(url);
+
+        }
 
     }
 

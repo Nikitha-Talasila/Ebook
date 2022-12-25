@@ -3,9 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="15dp">
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp">
 
     <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -30,6 +33,8 @@
             android:layout_marginTop="-107dp"
             android:layout_toRightOf="@+id/imageview"
             android:text="cardview"
+            android:fontFamily="@font/padauk"
+            android:textColor="@android:color/holo_blue_light"
             android:textSize="24sp"
             android:textStyle="bold" />
 
