@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedbackActivity"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="7dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="66dp"
+        android:text="Please Let Us Know Your Concerns "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/booksAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="203dp"
+        android:text="Book Addition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/appPerf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="App performance"
+        app:layout_constraintStart_toStartOf="@+id/booksAdd"
+        app:layout_constraintTop_toBottomOf="@+id/booksAdd"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/paragraph"
+        android:layout_width="0dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type your queries here"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appPerf"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:text="cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submit"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="69dp"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paragraph"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        app:layout_constraintBottom_toTopOf="@+id/booksAdd"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
