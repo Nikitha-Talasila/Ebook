@@ -14,8 +14,8 @@ import android.widget.TextView;
 public class csepdfs extends AppCompatActivity {
     public static String nameVariable= "";
     private ListView mListView;
-    private String[] names = {"DBMS","OS","AI"};
-    private int [] images = {R.drawable.img,R.drawable.img,R.drawable.img};
+    private String[] names = {"CC","CNS","DBMS","AI"};
+    private int [] images = {R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +42,16 @@ public class csepdfs extends AppCompatActivity {
                         nameVariable="2";
                         startActivity(in);
                     }
-                    else{
+                    else if(i==2){
                         Intent in = new Intent(view.getContext(),ebookActivity.class);
 //                        in.putExtra("key3", 3);
                         nameVariable="3";
+                        startActivity(in);
+                    }
+                    else if(i==3){
+                        Intent in = new Intent(view.getContext(),ebookActivity.class);
+//                        in.putExtra("key3", 3);
+                        nameVariable="4";
                         startActivity(in);
                     }
                 }

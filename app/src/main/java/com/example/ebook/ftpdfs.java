@@ -1,66 +1,59 @@
 package com.example.ebook;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class dept extends AppCompatActivity {
+public class ftpdfs extends AppCompatActivity {
+    public static String nameVariable= "";
     private ListView mListView;
-    ImageButton feedbackB;
-    private String[] names = {"CSE","ECE","CIVIL","MECH","FT"};
-    private int [] images = {R.drawable.cse,R.drawable.ece,R.drawable.civil,R.drawable.mech,R.drawable.ft};
-    @Override
+    private String[] names = {"Biochemistry","Microbiology","Organic Chemistry"};
+    private int [] images = {R.drawable.img,R.drawable.img,R.drawable.img};
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dept);
+        setContentView(R.layout.activity_mechpdfs);
+
         mListView = findViewById(R.id.listview);
 
-        MyAdapter adapter = new MyAdapter();
+        ftpdfs.MyAdapter adapter = new ftpdfs.MyAdapter();
         mListView.setAdapter(adapter);
-        feedbackB=findViewById(R.id.feedback);
 
-        feedbackB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(view.getContext(),feedbackActivity.class);
-                startActivity(in);
-            }
-        });
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0){
-                    Intent in = new Intent(view.getContext(),csepdfs.class);
+                    Intent in = new Intent(view.getContext(),ebookActivity.class);
+//                        in.putExtra("key1", 1);
+                    nameVariable="14";
                     startActivity(in);
                 }
                 else if(i==1){
-                    Intent in = new Intent(view.getContext(),ecepdfs.class);
+                    Intent in = new Intent(view.getContext(),ebookActivity.class);
+//                        in.putExtra("key2", 2);
+                    nameVariable="15";
                     startActivity(in);
                 }
                 else if(i==2){
-                    Intent in = new Intent(view.getContext(),civilpdfs.class);
+                    Intent in = new Intent(view.getContext(),ebookActivity.class);
+//                        in.putExtra("key3", 3);
+                    nameVariable="16";
                     startActivity(in);
                 }
-                else if(i==3){
-                    Intent in = new Intent(view.getContext(),mechpdfs.class);
-                    startActivity(in);
-                }
-                else{
-                    Intent in = new Intent(view.getContext(),ftpdfs.class);
-                    startActivity(in);
-                }
+//                else if(i==3){
+//                    Intent in = new Intent(view.getContext(),ebookActivity.class);
+////                        in.putExtra("key3", 3);
+//                    nameVariable="4";
+//                    startActivity(in);
+//                }
             }
         });
     }
@@ -97,20 +90,4 @@ public class dept extends AppCompatActivity {
 
 
     }
-
-//    CardView cse;
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_dept);
-//        cse = findViewById(R.id.cardview);
-//        cse.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i1 = new Intent(dept.this, MainActivity.class);
-//                startActivity(i1);
-//            }
-//        });
-//
-//    }
 }

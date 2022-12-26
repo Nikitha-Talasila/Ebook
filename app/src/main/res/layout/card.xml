@@ -29,13 +29,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageview"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="71dp"
-            android:layout_marginTop="-107dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-111dp"
             android:layout_toRightOf="@+id/imageview"
+            android:fontFamily="@font/coustardregular"
+            android:letterSpacing="0.1"
             android:text="cardview"
-            android:fontFamily="@font/padauk"
             android:textColor="@android:color/holo_blue_light"
-            android:textSize="24sp"
+            android:textSize="16dp"
             android:textStyle="bold" />
 
     </RelativeLayout>

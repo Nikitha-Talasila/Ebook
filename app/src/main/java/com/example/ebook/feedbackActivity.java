@@ -27,14 +27,7 @@ public class feedbackActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-
         Book_Addition = findViewById(R.id.booksAdd);
-//        if(Book_Addition.isChecked())
-//        {
-//            Dialog dialog = new Dialog(this);
-//            dialog.setContentView(R.layout.activity_feedback);
-//            dialog.show();
-//        }
         App_Performance = findViewById(R.id.appPerf);
         submit=findViewById(R.id.submit);
         cancel = findViewById(R.id.cancel);

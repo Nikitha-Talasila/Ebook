@@ -32,29 +32,69 @@ public class ebookActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ebook);
 
         ebookRecycler = findViewById(R.id.ebookRecycler);
-//
-
 
         if(textFromMainActivity=="1") {
-            reference = FirebaseDatabase.getInstance().getReference().child("dbms");
+            reference = FirebaseDatabase.getInstance().getReference().child("cc");
         }
         else if(textFromMainActivity=="2") {
-            reference = FirebaseDatabase.getInstance().getReference().child("pdf");
+            reference = FirebaseDatabase.getInstance().getReference().child("cns");
         }
         else if(textFromMainActivity=="3") {
             reference = FirebaseDatabase.getInstance().getReference().child("dbms");
         }
+        else if(textFromMainActivity=="4") {
+            reference = FirebaseDatabase.getInstance().getReference().child("ai");
+        }
+        else if(textFromMainActivity=="5") {
+            reference = FirebaseDatabase.getInstance().getReference().child("edc");
+            System.out.println("Hello edc");
+        }
+        else if(textFromMainActivity=="6") {
+            reference = FirebaseDatabase.getInstance().getReference().child("ss");
+            System.out.println("Hello ss");
+        }
+        else if(textFromMainActivity=="7") {
+            reference = FirebaseDatabase.getInstance().getReference().child("mpc");
+            System.out.println("Hello mpc");
+        }
+//        else if(textFromMainActivity=="8") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("msm");
+//        }
+//        else if(textFromMainActivity=="9") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("sm");
+//        }
+//        else if(textFromMainActivity=="10") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("at");
+//        }
+//        else if(textFromMainActivity=="11") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("fm");
+//        }
+//        else if(textFromMainActivity=="12") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("ecp");
+//        }
+//        else if(textFromMainActivity=="13") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("drcs");
+//        }
+//        else if(textFromMainActivity=="14") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("bc");
+//        }
+//        else if(textFromMainActivity=="15") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("mb");
+//        }
+//        else if(textFromMainActivity=="16") {
+//            reference = FirebaseDatabase.getInstance().getReference().child("oc");
+//        }
+
         getData();
 
     }
 
     private void getData() {
-        System.out.println("**********************"+csepdfs.nameVariable);
+//        System.out.println("**********************"+csepdfs.nameVariable);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                System.out.println(snapshot.toString()+"   Siddhu");
                 list = new ArrayList<>();
                 for(DataSnapshot snapshot1: snapshot.getChildren())
                 {

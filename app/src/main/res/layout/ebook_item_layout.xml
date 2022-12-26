@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_margin="15dp"
     app:cardElevation="3dp">
 
     <LinearLayout
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -23,9 +23,10 @@
             android:layout_height="45dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
-            android:fontFamily="@string/app_name"
+            android:fontFamily="@font/coustardregular"
+            android:gravity="center"
             android:text="Data Structure Using C"
-            android:textColor="@color/black"
+            android:textColor="@color/teal_700"
             android:textSize="12dp" />
 
         <ImageView
@@ -33,7 +34,7 @@
             android:layout_width="44dp"
             android:layout_height="42dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="-10dp"
+            android:layout_marginLeft="-15dp"
             android:src="@drawable/ic_baseline_download_24" />
     </LinearLayout>
 
